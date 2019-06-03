@@ -1,0 +1,44 @@
+<div class="form-control">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="row">
+                <input class="form-control" [(ngModel)]="currentExpression">
+                <input class="form-control" [(ngModel)]="result">
+                <!-- <br>
+                <input class="form-control" [(ngModel)]="result"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <!-- <div class="col-md-2"> 
+                        <input type="button" value="1" (click)="updateExpression()">
+                    </div>-->
+                    <input class="col-md-2" type="button" value="1" (click)="updateExpression('1',true)">
+                    <input class="col-md-2" type="button" value="2" (click)="updateExpression('2',true)">
+                    <input class="col-md-2" type="button" value="3" (click)="updateExpression('3',true)">
+                    <input class="col-md-2" type="button" value="4" (click)="updateExpression('4',true)">
+                    <input class="col-md-2" type="button" value="5" (click)="updateExpression('5',true)">   
+                </div>
+                <div class="row">
+                        <input class="col-md-2" type="button" value="6" (click)="updateExpression('6',true)">
+                        <input class="col-md-2" type="button" value="7" (click)="updateExpression('7',true)">
+                        <input class="col-md-2" type="button" value="8" (click)="updateExpression('8',true)">
+                        <input class="col-md-2" type="button" value="9" (click)="updateExpression('9',true)">
+                        <input class="col-md-2" type="button" value="0" (click)="updateExpression('0',true)"> 
+                </div>
+                <div class="row">
+                        <input class="col-md-2" type="button" value="+" (click)="updateExpression('+',false)">
+                        <input class="col-md-2" type="button" value="-" (click)="updateExpression('-',false)">
+                        <input class="col-md-2" type="button" value="*" (click)="updateExpression('*',false)">
+                        <input class="col-md-2" type="button" value="/" (click)="updateExpression('/',false)">
+                        <input class="col-md-2" type="button" value="=" (click)="updateExpression('=',false)"> 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+        <div class="row">
+            <h4>History</h4>
+            <label>{{History}}</label>
+        </div>
+        </div>
+    </div>
+</div>
